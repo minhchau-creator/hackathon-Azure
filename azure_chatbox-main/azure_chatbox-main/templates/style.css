@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(cat.png);
+    background-repeat : no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    --main-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #2fce34;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.backgorund {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.color-background-change,
+.change-color-theme {
+    margin-right: 10px;
+}
+
+.color-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.color-switcher .theme-button-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background: #fff;
+    z-index: 1000;
+}
+
+.color-switcher.active .theme-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theme-buttons {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(84, 84, 84);
+}
+
+.theme-buttons[data-color] {
+    background: var(--main-color, #ccc);
+}
+
+.container {
+    /* Your other container styles */
+    background-color: var(--main-color, #ffffff);
+}
